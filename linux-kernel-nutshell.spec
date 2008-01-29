@@ -1,5 +1,6 @@
 %define tarname   lkn_pdf
 Summary:	Linux Kernel In A Nutshell Book
+Summary(pl.UTF-8):	Książka "Linux Kernel In A Nutshell" (Jądro Linuksa w pigułce)
 Name:		linux-kernel-nutshell
 Version:	1
 Release:	32
@@ -34,6 +35,32 @@ options at runtime.
 A key benefit of the book is a chapter on determining exactly what
 drivers are needed for your hardware. Also included are recipes that
 list what you need to do to accomplish a wide range of popular tasks.
+
+%description -l pl.UTF-8
+"Linux Kernel in a Nutshell" (Jądro Linuksa w pigułce) to książka
+napisana przez wiodącego programistę i maintainera jądra Linuksa,
+będąca obszernym przeglądem procesu konfiguracji i budowania jądra -
+zadania krytycznego dla użytkowników i administratorów Linuksa.
+
+Dystrybucje nie są w stanie dostarczyć jądra pasującego do absolutnie
+wszystkich potrzeb. Małe i duże komputery mają specjalne wymagania
+wymagające czasem rekonfiguracji i przebudowania jądra. Przy próbach z
+uruchamianiem dźwięku, sieci bezprzewodowej czy zarządzaniem energią
+na laptopie albo wdrażaniu poważnych podsystemów takich jak
+zarządzanie wolumenami logicznymi w dużym serwerze przydaje się
+znajomość zagadnień przedstawionych w tej książce.
+
+"Linux Kernel in a Nutshell" pokrywa cały zakres zadań związanych z
+jądrem, począwszy od ściągnięcia źródeł i upewnienia się, że wersja
+jądra odpowiada wersjom potrzebnych narzędzi. Oprócz kroków
+konfiguracji i instalacji książka zawiera materiał referencyjny i
+omówienie pobliskich zagadnień, takich jak sterowanie opcjami jądra
+w czasie działania.
+
+Istotną zaletą książki jest rozdział poświęcony określaniu jakie
+dokładnie sterowniki są potrzebne dla danego sprzętu. Ponadto
+dołączone są listy kroków potrzebnych do wykonania wielu popularnych
+zadań.
 
 %prep
 %setup -q -n %{tarname}
